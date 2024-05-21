@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description"  content="blog description and art page home site"/>
+    <title>Welcome homepage site</title>
+
+
+<!--first link to "index" stylesheet  css-->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!--second link to "blogs" stylesheet css-->
+    <link rel="stylesheet" href="second_style.css">
+
+</head>
+
+<!-- WELCOME TO BLOG POST CONFIGURE SETTING HERE SO THIS IS JUST AN OVERVIEW-->
+<body>
+    
+   
+  
+   <h1><p id="p5"> Welcome to my blog spot!</p></h1>
+
+    <!--this listed as "list" in the css style, go to css to reconfigure-->
+    <nav class="navbar">
+        <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="Digital.html">Digital</a></li>
+             <li><a href="Sketches.html">Sketches</a></li>
+             <li><a href="Graphic_Designs.html">Graphic Designs</a></li>
+             <li><a href="questions.html"><button id="questions">?</button></img></a></li>
+          
+      </ul>
+  </nav> 
+ <!--second_style.css-->
+    <div class="giftext">
+
+        <img id="image-wrapper" alt="foxgirl.jpg" src="foxgirl.gif" width="250" height="250"></img>
+        
+    
+        <p id="p6">Welcome, to my Digital Drawings and Creativity, I do digital drawings back in the early 2017 but wasnt magnificient
+            as I remembered but I continue to do the things I normally do, some I had recent breaks from months to year but hopefully
+            to continue my greatest passion in life of arts, mastery and perfection.   
+        </p>
+        <p id="p6">Here's the things I do in some occasions with my life or in general
+                   which I normally do or the things I found Interesting at times. 
+        </p>
+    </div>
+
+    <section class="pictures">
+        <!-- First toggle button -->
+        <button id="buttonpic1" onclick="toggleContent('content1', 'content2', 'content3')">Pictures</button>
+        
+        <!-- Second toggle button -->
+        <button id="buttonpic2" onclick="toggleContent('content2', 'content1', 'content3')">Fanarts</button>
+    
+        <!-- Third toggle button -->
+        <button id="buttonpic3" onclick="toggleContent('content3', 'content1', 'content2')">Videos</button>
+    
+        <!-- First set of images -->
+        <div id="content1" style="display: none;">
+
+            <p id="p6">This is my work made on my computer, I do digital drawings 
+                made in 2020-2021 in my early endeavors, usually I stop time to time
+                and often I came back when needed and continuing my projects.
+            </p>
+
+            <p id="p6"> This my Original Charater Design, hopefully to be Publish soon!</p>
+    
+            <img class="Artwork" src="motor.jpg" alt="Image">
+            <img class="Artwork" src="emergency.jpg" alt="Image">
+            <img class="Artwork" src="lilith.jpg" alt="Image">
+            <img class="Artwork" src="flower.png" alt="Image">
+            <img class="Artwork" src="pop.png" alt="Image">
+        </div>
+    
+        <!-- Second set of images -->
+        <div id="content2" style="display: none;">
+
+            <p id="p6">This is my Fanarts where I do some of my inspiration drawings from other medias such as comics and 
+                japanese manga and other stuff, it is a fun concept where I learned a lot on doing some other characters,
+                which I also enjoyed watching or reading. </p>
+            <img class="Artwork2" src="lily.jpg" alt="Image">
+            <img class="Artwork2" src="pitch.jpg" alt="Image">
+            <img class="Artwork2" src="suna.jpg" alt="Image">
+            <img class="Artwork2" src="kanna.jpg" alt="Image">
+            <img class="Artwork2" src="angel.jpg" alt="Image">
+        </div>
+    
+         <!-- Third set of videos -->
+         <div id="content3" style="display: none;">
+
+            <p id="p6">This is a video project back in 2022 but wasn't able to finish
+                due to a lack of practice, experiences and time and to fucos on such project, But I had alot of fun!
+            </p>
+    
+            <video class="Artwork3" controls>
+                <source src="senko.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+          
+        </div>
+    </section>
+    
+    <script>
+    // Function to toggle the visibility of content
+    function toggleContent(showId, hideId1, hideId2) {
+        var showContent = document.getElementById(showId);
+        var hideContent1 = document.getElementById(hideId1);
+        var hideContent2 = document.getElementById(hideId2);
+        
+        // Toggle showContent
+        if (showContent.style.display === "none") {
+            showContent.style.display = "block";
+        } else {
+            showContent.style.display = "none";
+        }
+    
+        // Hide other content
+        if (hideContent1.style.display === "block") {
+            hideContent1.style.display = "none";
+        }
+        if (hideContent2.style.display === "block") {
+            hideContent2.style.display = "none";
+        }
+    }
+    
+    // Hide all content when the page is loaded
+    window.onload = function() {
+        var content1 = document.getElementById('content1');
+        var content2 = document.getElementById('content2');
+        var content3 = document.getElementById('content3');
+        content1.style.display = "none";
+        content2.style.display = "none";
+        content3.style.display = "none";
+    }
+    
+    // Hide all content when the page is unloaded or navigated away from
+    window.onbeforeunload = function() {
+        var content1 = document.getElementById('content1');
+        var content2 = document.getElementById('content2');
+        var content3 = document.getElementById('content3');
+        content1.style.display = "none";
+        content2.style.display = "none";
+        content3.style.display = "none";
+    }
+    </script>
+</script>
+</body>
+</html>

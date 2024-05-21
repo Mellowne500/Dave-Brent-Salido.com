@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description"  content="blog description and art page home site"/>
+    <title>Welcome homepage site</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="second_style.css">
+</head>
+
+
+<!--SO YOU MANGE TO OPEN THIS UP TRY NOT CONFIGURE AS MUCH AS YOU SHOULD BESDIE JUST TRY TO IMPROVE IT 
+    DON'T BE AN ASS ABOUT IT SOMETIMES THINGS ARE NOT FUNNY AS THEY SHOULD BE, PEACE-->
+
+
+<body>
+
+    <h1><p id="p5"> Welcome to my blog spot!</p></h1>
+
+    <!--this listed as "list" in the css style, go to css to reconfigure-->
+    <nav class="navbar">
+        <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="Digital.html">Digital</a></li>
+             <li><a href="Sketches.html">Sketches</a></li>
+             <li><a href="Graphic_Designs.html">Graphic Designs</a></li>
+             <li><a href="questions.html"><button id="questions">?</button></img></a></li>
+
+      </ul>
+</nav> 
+
+<!--second_style.css-->
+
+<div class="giftext2">
+
+    <img id="image-wrapper2" alt="neko.gif" src="neko.gif" height="250px" width="250px"></img>
+
+    <p id="p6">Welcome, to my sketches or drawings made on paper or just any 
+              paper or style for that matter, usually I always express in paper
+              before doing on the official piece.
+     
+        </p>
+    <p id="p6">I make some wacky Sketches and other projects but still
+        most of them are unoffcial just my routine or possibility in the future.
+    </p>    
+</div>
+
+
+<section class="pictures">
+    <!-- First toggle button -->
+    <button id="buttonpic1" onclick="toggleContent('content1', 'content2', 'content3')">Concept</button>
+    
+    <!-- Second toggle button -->
+    <button id="buttonpic2" onclick="toggleContent('content2', 'content1', 'content3')">Sketches</button>
+
+    
+
+    <!-- First set of images -->
+    <div id="content1" style="display: none;">
+
+        <p id="p6">This my concept on Portrait art, where I draw particular people or characters based on my 
+            preferences that I usually enjoyed when creating a particular Inspirational creativity, but in some 
+           cases this is just a puppy love creation.
+        </p>
+
+        <img class="Artwork4" src="pumpum.png" alt="Image">
+        <img class="Artwork4" src="kiosk.jpg" alt="Image">
+        <img class="Artwork4" src="dragon angel.png" alt="Image">
+        <img class="Artwork4" src="jade.jpg" alt="Image">
+        <img class="Artwork4" src="nina.jpg" alt="Image">
+        <img class="Artwork4" src="blue.jpg" alt="Image">
+        <img class="Artwork4" src="claire.jpg" alt="Image">
+        <img class="Artwork4" src="lilith2.jpg" alt="Image">
+    </div>
+
+    <!-- Second set of images -->
+    <div id="content2" style="display: none;">
+
+    <P id="p6">This is some old Sketches I made or newer ones that I work on paper they are all just 
+        things I proceed such creativity before I actually put them on actual paper so or less but mostly
+    I enjoyed making off Digital sometimes and quite fun too. </P>
+
+        <img class="Artwork2" src="sketch1.jpg" alt="Image">
+        <img class="Artwork2" src="sketch2.jpg" alt="Image">
+        <img class="Artwork2" src="war.jpg" alt="Image">
+        <img class="Artwork2" src="game.jpg" alt="Image">
+    </div>
+
+  
+</section>
+
+<script>
+// Function to toggle the visibility of content
+function toggleContent(showId, hideId1, hideId2) {
+    var showContent = document.getElementById(showId);
+    var hideContent1 = document.getElementById(hideId1);
+    var hideContent2 = document.getElementById(hideId2);
+    
+    // Toggle showContent
+    if (showContent.style.display === "none") {
+        showContent.style.display = "block";
+    } else {
+        showContent.style.display = "none";
+    }
+
+    // Hide other content
+    if (hideContent1.style.display === "block") {
+        hideContent1.style.display = "none";
+    }
+    if (hideContent2.style.display === "block") {
+        hideContent2.style.display = "none";
+    }
+}
+
+// Hide all content when the page is loaded
+window.onload = function() {
+    var content1 = document.getElementById('content1');
+    var content2 = document.getElementById('content2');
+    var content3 = document.getElementById('content3');
+    content1.style.display = "none";
+    content2.style.display = "none";
+    content3.style.display = "none";
+}
+
+// Hide all content when the page is unloaded or navigated away from
+window.onbeforeunload = function() {
+    var content1 = document.getElementById('content1');
+    var content2 = document.getElementById('content2');
+    var content3 = document.getElementById('content3');
+    content1.style.display = "none";
+    content2.style.display = "none";
+    content3.style.display = "none";
+}
+</script>
+
+</html>
+</body>    
+       
+    

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description"  content="blog description and art page home site"/>
+    <title>Welcome homepage site</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="second_style.css">
+</head>
+
+
+<!--SO YOU MANGE TO OPEN THIS UP TRY NOT CONFIGURE AS MUCH AS YOU SHOULD BESDIE JUST TRY TO IMPROVE IT 
+    DON'T BE AN ASS ABOUT IT SOMETIMES THINGS ARE NOT FUNNY AS THEY SHOULD BE, PEACE-->
+
+
+<body>
+
+    <h1><p id="p5"> Welcome to my blog spot!</p></h1>
+
+    <!--this listed as "list" in the css style, go to css to reconfigure-->
+    <nav class="navbar">
+        <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="Digital.html">Digital</a></li>
+             <li><a href="Sketches.html">Sketches</a></li>
+             <li><a href="Graphic_Designs.html">Graphic Designs</a></li>
+             <li><a href="questions.html"><button id="questions">?</button></img></a></li>
+            
+
+      </ul>
+</nav> 
+
+<!--second_style.css-->
+
+<div class="giftext2">
+
+    <img id="image-wrapper2" alt="sleepycat.gif" src="sleepycat.gif" height="250px" width="250px"></img>
+
+    <p id="p6">Welcome, to my Graphic Designs where I make an conceptualize apps or particular designs that
+        I think may come as a use one day, Mostly I work making Design that actual User Interface actually uses and come up some 
+        certain ways to developed my creativity in the field on designing things on my own way.
+        </p>
+    <p id="p6"> But for the most part I still wanna to make more or future Clients see my work as their fancy
+        Regardless I still to continue to Improve and make some amazing concept.
+    </p>    
+
+</div>
+
+<section class="pictures">
+    <!-- First toggle button -->
+    <button id="buttonpic1" onclick="toggleContent('content1', 'content2', 'content3')">illustrate</button>
+    
+    <!-- Second toggle button -->
+    <button id="buttonpic2" onclick="toggleContent('content2', 'content1', 'content3')">Apps</button>
+
+
+
+    <!-- First set of images -->
+
+
+
+    <div id="content1" style="display: none;">
+
+
+        <p id="p6">This is all the Icon I made on Adobe illustrator that I used, I make concept the Icon app trying to figure 
+            whats the best Design for an Interface of a UI design on a mobile home theme.
+        </p>
+
+
+
+
+        <img class="Artwork6" src="Artboard 10.png" alt="Image">
+        <img class="Artwork6" src="Artboard 13.png" alt="Image">
+        <img class="Artwork6" src="Artboard 15.png" alt="Image">
+        <img class="Artwork6" src="Artboard 5.png" alt="Image">
+        <img class="Artwork6" src="Artboard 7.png" alt="Image">
+        <img class="Artwork6" src="Artboard 1.png" alt="Image">
+        <img class="Artwork6" src="Artboard 11.png" alt="Image">
+        <img class="Artwork6" src="Artboard 21.png" alt="Image">
+        <img class="Artwork6" src="Artboard 14.png" alt="Image">
+        <img class="Artwork6" src="Artboard 9.png" alt="Image">
+        <img class="Artwork6" src="Artboard 17.png" alt="Image">
+        <img class="Artwork6" src="Artboard 18.png" alt="Image">
+    </div>
+
+    <!-- Second set of images -->
+    <div id="content2" style="display: none;">
+
+        <p id="p6">This is my Concept work on a particular Home theme App that I've
+            been practicing trying to see to develop a new home theme in my design.        
+        </p>     
+        <img class="Artwork4" src="app.png" alt="Image">
+        <img class="Artwork4" src="gallery.png" alt="image">
+        <img class="Artwork5" src="calendarz.png" alt="image">
+        <img class="Artwork5" src="design.png" alt="image">
+        <img class="Artwork5" src="paper.png" alt="image">
+        <img class="Artwork4" src="lunar year gg.png" alt="image">
+        <img class="Artwork4" src="lunar year.png" alt="image">
+
+
+    </div>
+
+  
+</section>
+
+<script>
+// Function to toggle the visibility of content
+function toggleContent(showId, hideId1, hideId2) {
+    var showContent = document.getElementById(showId);
+    var hideContent1 = document.getElementById(hideId1);
+    var hideContent2 = document.getElementById(hideId2);
+    
+    // Toggle showContent
+    if (showContent.style.display === "none") {
+        showContent.style.display = "block";
+    } else {
+        showContent.style.display = "none";
+    }
+
+    // Hide other content
+    if (hideContent1.style.display === "block") {
+        hideContent1.style.display = "none";
+    }
+    if (hideContent2.style.display === "block") {
+        hideContent2.style.display = "none";
+    }
+}
+
+// Hide all content when the page is loaded
+window.onload = function() {
+    var content1 = document.getElementById('content1');
+    var content2 = document.getElementById('content2');
+    var content3 = document.getElementById('content3');
+    content1.style.display = "none";
+    content2.style.display = "none";
+    content3.style.display = "none";
+}
+
+// Hide all content when the page is unloaded or navigated away from
+window.onbeforeunload = function() {
+    var content1 = document.getElementById('content1');
+    var content2 = document.getElementById('content2');
+    var content3 = document.getElementById('content3');
+    content1.style.display = "none";
+    content2.style.display = "none";
+    content3.style.display = "none";
+}
+</script>
+
+
+</html>
+</body>    

@@ -1,0 +1,253 @@
+body{
+
+
+
+
+    margin: 200px;
+ margin-top: 30px;
+
+   background-image: url(Standardpin.gif);
+
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+/*this a line digital spot code*/
+
+}
+.giftext {
+
+    /* group selection of gif and text*/ 
+    
+    margin-top: 50px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-attachment: fixed;
+    display: flow-root;
+
+    #image-wrapper{
+        margin-top: none;
+        background-image: url(foxgirl.gif);
+        background-size: cover;
+        border-radius: 20px;
+        border-style: outset;
+        border-color: #fa7ac9;
+        display: flow-root;
+    
+        float:left;
+        margin-right: 40px;
+
+    
+    }
+
+    
+    }
+
+.giftext2 {
+
+        /* group selection of gif and text*/ 
+        
+        margin-top: 50px;
+        border-style: solid;
+        border-radius: 20px;
+        border-color: #ffffff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        background-attachment: fixed;
+        display: flow-root;
+        
+        }
+
+
+    #image-wrapper2{
+
+        margin-top: none;
+        background-image: url(neko.gif);
+        background-size: cover;
+        border-radius: 20px;
+        border-style: outset;
+        border-color: #fa7ac9;
+        display: flow-root;
+    
+        float:left;
+        margin-right: 40px;
+    
+    }
+    
+    /* button link color*/
+
+#click:hover{
+
+color:#6de3f3
+
+}
+
+#p5{
+    
+        background-image: url(standardpin2.gif);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: auto;
+        color:#6de3f3;
+        font-family:"PressStart";
+        font-size: 30px;
+        font-weight: 9000px ;
+        border-style: outset;
+        border-radius: 10px;
+        border-color: #757575;
+        padding: 5px;
+        text-align: center;
+    
+    }
+#p6{
+    
+        background: fixed;
+
+        text-size-adjust: calc(70%);
+        color:#ffffff;
+        font-family:"consolas", "monospace";
+        font-size: 20px;
+        padding-right: 10px ;
+        text-align: left;
+    
+    
+        
+    
+    }    
+ #p7{
+        
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    
+        color:#ffffff;
+        font-family:"Courier", "monospace";
+        font-size: 18px;
+        padding: auto;
+   
+    
+/*button togglge line*/
+
+    }
+#buttonpic1{
+    font-family: "consolas";
+    font-size: 15px;
+    background: linear-gradient( #6de3f3,#fa7ac9);
+    color: #ffffff;
+    border-style: outset;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+}
+#buttonpic2{
+    font-family: "consolas";
+    font-size: 15px;
+    background: linear-gradient( #6de3f3,#fa7ac9);
+    color: #ffffff;
+    border-style: outset;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+}
+
+#buttonpic3{
+
+    font-family: "consolas";
+    font-size: 15px;
+    background: linear-gradient( #6de3f3,#fa7ac9);
+    color: #ffffff;
+    border-style: outset;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+
+
+
+}
+
+/*picure size adjusment*/
+
+
+.Artwork{
+
+    margin-top: 50px;
+    border-radius: 10px;
+    height: 300px;
+    width: 250px;
+    border-style: outset;
+}    
+.Artwork2{
+
+    margin-top: 50px;
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+    border-style: outset;
+}
+.Artwork3{
+    margin-top: 50px;
+    background-color: #fa7ac9;
+    border-radius: 10px;
+    height: 300px;
+    width: 500px;
+    border-style: outset;
+}    
+
+
+.Artwork4{
+    
+    margin-top: 50px;
+    background-color: #fa7ac9;
+    border-radius: 10px;
+    height: 300px;
+    width: 200px;
+    border-style: outset;
+}  
+
+.Artwork5{
+    
+    margin-top: 50px;
+    background-color: #fa7ac9;
+    border-radius: 10px;
+    height: 200px;
+    width: 350px;
+    border-style: outset;
+}  
+
+.Artwork6{
+    
+    margin-top: 50px;
+    background:none;
+ 
+    height: 160px;
+    width: 160px;
+    
+}  
+#content1, #content2 {
+    display: none; /* Hide the images initially */
+}
+
+.pictures{
+
+    margin-top: 50px;
+    
+    }
+/* this Sketch line code*/
+
+#sketchgraph{
+
+
+
+
+color:#ffffff;
+
+
+
+}
